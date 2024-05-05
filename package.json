@@ -18,7 +18,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@lucia-auth/adapter-drizzle": "^1.0.7",
+    "@lucia-auth/adapter-sqlite": "^3.0.1",
     "drizzle-kit": "^0.20.17",
     "lucia": "^3.2.0",
     "oslo": "^1.2.0",
