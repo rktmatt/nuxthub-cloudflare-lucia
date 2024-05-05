@@ -1,5 +1,4 @@
 import { verifyRequestOrigin } from 'lucia'
-
 import type { Session, User } from 'lucia'
 
 export default defineEventHandler(async (event) => {
@@ -16,28 +15,35 @@ export default defineEventHandler(async (event) => {
   }
 
   const sessionId =
-    getCookie(event, lucia.sessionCookieName) ?? null
+    getCookie(
+      event,
+      initializeLucia(hubDatabase()).sessionCookieName
+    ) ?? null
   if (!sessionId) {
     event.context.session = null
     event.context.user = null
     return
   }
 
-  const { session, user } = await lucia.validateSession(
-    sessionId
-  )
+  const { session, user } = await initializeLucia(
+    hubDatabase()
+  ).validateSession(sessionId)
   if (session && session.fresh) {
     appendResponseHeader(
       event,
       'Set-Cookie',
-      lucia.createSessionCookie(session.id).serialize()
+      initializeLucia(hubDatabase())
+        .createSessionCookie(session.id)
+        .serialize()
     )
   }
   if (!session) {
     appendResponseHeader(
       event,
       'Set-Cookie',
-      lucia.createBlankSessionCookie().serialize()
+      initializeLucia(hubDatabase())
+        .createBlankSessionCookie()
+        .serialize()
     )
   }
   event.context.session = session

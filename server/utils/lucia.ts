@@ -9,8 +9,6 @@ export function initializeLucia(D1: D1Database) {
   return new Lucia(adapter)
 }
 
-export const lucia = initializeLucia(hubDatabase())
-
 declare module 'lucia' {
   interface Register {
     Auth: ReturnType<typeof initializeLucia>
