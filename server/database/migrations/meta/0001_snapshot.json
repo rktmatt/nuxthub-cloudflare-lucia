@@ -1,8 +1,8 @@
 {
   "version": "5",
   "dialect": "sqlite",
-  "id": "aa659ee8-01d3-4b3d-9b47-50500939df06",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "262a5856-dd16-4466-bc60-6d5aaa3c18de",
+  "prevId": "aa659ee8-01d3-4b3d-9b47-50500939df06",
   "tables": {
     "challenge": {
       "name": "challenge",
@@ -24,6 +24,65 @@
       },
       "indexes": {},
       "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "publicKey": {
+      "name": "publicKey",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "publicKey": {
+          "name": "publicKey",
+          "type": "blob",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "alg": {
+          "name": "alg",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "createdAt": {
+          "name": "createdAt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "(CURRENT_TIMESTAMP)"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "publicKey_user_id_user_id_fk": {
+          "name": "publicKey_user_id_user_id_fk",
+          "tableFrom": "publicKey",
+          "tableTo": "user",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
@@ -98,20 +157,6 @@
         "email": {
           "name": "email",
           "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "publicKey": {
-          "name": "publicKey",
-          "type": "blob",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "alg": {
-          "name": "alg",
-          "type": "integer",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false

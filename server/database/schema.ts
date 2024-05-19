@@ -16,7 +16,7 @@ export const session = sqliteTable('session', {
   userId: text('user_id')
     .notNull()
     .references(() => user.id),
-  expiresAt: integer('expiresAt').notNull(),
+  expiresAt: integer('expires_at').notNull(),
 })
 
 /**
@@ -25,9 +25,6 @@ export const session = sqliteTable('session', {
 export const challenge = sqliteTable('challenge', {
   id: integer('id').primaryKey({ autoIncrement: true }),
   challenge: blob('challenge').notNull(),
-  //userId: text("userId")
-  //  .notNull()
-  //  .references(() => user.id),
 })
 
 /**
@@ -42,4 +39,17 @@ export const user = sqliteTable('user', {
   role: text('role', { enum: ['user', 'admin'] }).default(
     'user'
   ),
+})
+
+/**
+ * Public Key table
+ */
+export const publicKey = sqliteTable('publicKey', {
+  id: text('id').primaryKey(),
+  publicKey: blob('publicKey').notNull(),
+  alg: integer('alg').notNull(),
+  userId: text('user_id')
+    .notNull()
+    .references(() => user.id),
+  createdAt: text('createdAt').default(sql`(CURRENT_TIMESTAMP)`),
 })

@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxthub-lucia-auth",
   "private": true,
   "type": "module",
   "scripts": {
@@ -19,9 +19,16 @@
   },
   "devDependencies": {
     "@lucia-auth/adapter-sqlite": "^3.0.1",
+    "@nuxt/test-utils": "^3.12.1",
+    "@vue/test-utils": "^2.4.6",
     "drizzle-kit": "^0.20.17",
+    "happy-dom": "^14.11.0",
     "lucia": "^3.2.0",
     "oslo": "^1.2.0",
-    "wrangler": "^3.53.1"
+    "playwright-core": "^1.44.0",
+    "uuidv7": "^0.6.3",
+    "vitest": "^1.6.0",
+    "wrangler": "^3.53.1",
+    "zod": "^3.23.7"
   }
 }
