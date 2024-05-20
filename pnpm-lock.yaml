@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@nuxthub/core':
         specifier: ^0.5.16
-        version: 0.5.16(ioredis@5.4.1)(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
+        version: 0.5.16(ioredis@5.4.1)(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
       drizzle-orm:
         specifier: ^0.30.10
-        version: 0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0)
+        version: 0.30.10(@opentelemetry/api@1.8.0)
       nuxt:
         specifier: ^3.11.2
-        version: 3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
+        version: 3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
       vue:
         specifier: ^3.4.21
         version: 3.4.26
@@ -55,8 +55,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(@types/node@20.12.8)(happy-dom@14.11.0)(terser@5.31.0)
       wrangler:
-        specifier: ^3.53.1
-        version: 3.53.1(@cloudflare/workers-types@4.20240502.0)
+        specifier: ^3.57.0
+        version: 3.57.0
       zod:
         specifier: ^3.23.7
         version: 3.23.7
@@ -257,32 +257,32 @@ packages:
     resolution: {integrity: sha512-EeEjMobfuJrwoctj7FA1y1KEbM0+Q1xSjobIEyie9k4haVEBB7vkDvsasw1pM3rO39mL2akxIAzLMUAtrMHZhA==}
     engines: {node: '>=16.13'}
 
-  '@cloudflare/workerd-darwin-64@1.20240419.0':
-    resolution: {integrity: sha512-PGVe9sYWULHfvGhN0IZh8MsskNG/ufnBSqPbgFCxJHCTrVXLPuC35EoVaforyqjKRwj3U35XMyGo9KHcGnTeHQ==}
+  '@cloudflare/workerd-darwin-64@1.20240512.0':
+    resolution: {integrity: sha512-VMp+CsSHFALQiBzPdQ5dDI4T1qwLu0mQ0aeKVNDosXjueN0f3zj/lf+mFil5/9jBbG3t4mG0y+6MMnalP9Lobw==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [darwin]
 
-  '@cloudflare/workerd-darwin-arm64@1.20240419.0':
-    resolution: {integrity: sha512-z4etQSPiD5Gcjs962LiC7ZdmXnN6SGof5KrYoFiSI9X9kUvpuGH/lnjVVPd+NnVNeDU2kzmcAIgyZjkjTaqVXQ==}
+  '@cloudflare/workerd-darwin-arm64@1.20240512.0':
+    resolution: {integrity: sha512-lZktXGmzMrB5rJqY9+PmnNfv1HKlj/YLZwMjPfF0WVKHUFdvQbAHsi7NlKv6mW9uIvlZnS+K4sIkWc0MDXcRnA==}
     engines: {node: '>=16'}
     cpu: [arm64]
     os: [darwin]
 
-  '@cloudflare/workerd-linux-64@1.20240419.0':
-    resolution: {integrity: sha512-lBwhg0j3sYTFMsEb4bOClbVje8nqrYOu0H3feQlX+Eks94JIhWPkf8ywK4at/BUc1comPMhCgzDHwc2OMPUGgg==}
+  '@cloudflare/workerd-linux-64@1.20240512.0':
+    resolution: {integrity: sha512-wrHvqCZZqXz6Y3MUTn/9pQNsvaoNjbJpuA6vcXsXu8iCzJi911iVW2WUEBX+MpUWD+mBIP0oXni5tTlhkokOPw==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [linux]
 
-  '@cloudflare/workerd-linux-arm64@1.20240419.0':
-    resolution: {integrity: sha512-ZMY6wwWkxL+WPq8ydOp/irSYjAnMhBz1OC1+4z+OANtDs2beaZODmq7LEB3hb5WUAaTPY7DIjZh3DfDfty0nYg==}
+  '@cloudflare/workerd-linux-arm64@1.20240512.0':
+    resolution: {integrity: sha512-YPezHMySL9J9tFdzxz390eBswQ//QJNYcZolz9Dgvb3FEfdpK345cE/bsWbMOqw5ws2f82l388epoenghtYvAg==}
     engines: {node: '>=16'}
     cpu: [arm64]
     os: [linux]
 
-  '@cloudflare/workerd-windows-64@1.20240419.0':
-    resolution: {integrity: sha512-YJjgaJN2yGTkV7Cr4K3i8N4dUwVQTclT3Pr3NpRZCcLjTszwlE53++XXDnHMKGXBbSguIizaVbmcU2EtmIXyeQ==}
+  '@cloudflare/workerd-windows-64@1.20240512.0':
+    resolution: {integrity: sha512-SxKapDrIYSscMR7lGIp/av0l6vokjH4xQ9ACxHgXh+OdOus9azppSmjaPyw4/ePvg7yqpkaNjf9o258IxWtvKQ==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [win32]
@@ -3375,8 +3375,8 @@ packages:
     resolution: {integrity: sha512-vqiC06CuhBTUdZH+RYl8sFrL096vA45Ok5ISO6sE/Mr1jRbGH4Csnhi8f3wKVl7x8mO4Au7Ir9D3Oyv1VYMFJw==}
     engines: {node: '>=12'}
 
-  miniflare@3.20240419.0:
-    resolution: {integrity: sha512-fIev1PP4H+fQp5FtvzHqRY2v5s+jxh/a0xAhvM5fBNXvxWX7Zod1OatXfXwYbse3hqO3KeVMhb0osVtrW0NwJg==}
+  miniflare@3.20240512.0:
+    resolution: {integrity: sha512-X0PlKR0AROKpxFoJNmRtCMIuJxj+ngEcyTOlEokj2rAQ0TBwUhB4/1uiPvdI6ofW5NugPOD1uomAv+gLjwsLDQ==}
     engines: {node: '>=16.13'}
     hasBin: true
 
@@ -4800,17 +4800,17 @@ packages:
   wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
 
-  workerd@1.20240419.0:
-    resolution: {integrity: sha512-9yV98KpkQgG+bdEsKEW8i1AYZgxns6NVSfdOVEB2Ue1pTMtIEYfUyqUE+O2amisRrfaC3Pw4EvjtTmVaoetfeg==}
+  workerd@1.20240512.0:
+    resolution: {integrity: sha512-VUBmR1PscAPHEE0OF/G2K7/H1gnr9aDWWZzdkIgWfNKkv8dKFCT75H+GJtUHjfwqz3rYCzaNZmatSXOpLGpF8A==}
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.53.1:
-    resolution: {integrity: sha512-bdMRQdHYdvowIwOhEMFkARIZUh56aDw7HLUZ/2JreBjj760osXE4Fc4L1TCkfRRBWgB6/LKF5LA4OcvORMYmHg==}
+  wrangler@3.57.0:
+    resolution: {integrity: sha512-izK3AZtlFoTq8N0EZjLOQ7hqwsjaXCc1cbNKuhsLJjDX1jB1YZBDPhIhtXL4VVzkJAcH+0Zw2gguOePFCHNaxw==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
-      '@cloudflare/workers-types': ^4.20240419.0
+      '@cloudflare/workers-types': ^4.20240512.0
     peerDependenciesMeta:
       '@cloudflare/workers-types':
         optional: true
@@ -5129,19 +5129,19 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/workerd-darwin-64@1.20240419.0':
+  '@cloudflare/workerd-darwin-64@1.20240512.0':
     optional: true
 
-  '@cloudflare/workerd-darwin-arm64@1.20240419.0':
+  '@cloudflare/workerd-darwin-arm64@1.20240512.0':
     optional: true
 
-  '@cloudflare/workerd-linux-64@1.20240419.0':
+  '@cloudflare/workerd-linux-64@1.20240512.0':
     optional: true
 
-  '@cloudflare/workerd-linux-arm64@1.20240419.0':
+  '@cloudflare/workerd-linux-arm64@1.20240512.0':
     optional: true
 
-  '@cloudflare/workerd-windows-64@1.20240419.0':
+  '@cloudflare/workerd-windows-64@1.20240512.0':
     optional: true
 
   '@cloudflare/workers-types@4.20240502.0': {}
@@ -5788,12 +5788,12 @@ snapshots:
 
   '@nuxt/devalue@2.0.2': {}
 
-  '@nuxt/devtools-kit@1.2.0(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))':
+  '@nuxt/devtools-kit@1.2.0(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))':
     dependencies:
       '@nuxt/kit': 3.11.2(rollup@4.17.2)
       '@nuxt/schema': 3.11.2(rollup@4.17.2)
       execa: 7.2.0
-      nuxt: 3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
+      nuxt: 3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
       vite: 5.2.11(@types/node@20.12.8)(terser@5.31.0)
     transitivePeerDependencies:
       - rollup
@@ -5812,10 +5812,10 @@ snapshots:
       rc9: 2.1.2
       semver: 7.6.0
 
-  '@nuxt/devtools@1.2.0(@unocss/reset@0.59.4)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))(vue@3.4.26)':
+  '@nuxt/devtools@1.2.0(@unocss/reset@0.59.4)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))(vue@3.4.26)':
     dependencies:
       '@antfu/utils': 0.7.7
-      '@nuxt/devtools-kit': 1.2.0(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
+      '@nuxt/devtools-kit': 1.2.0(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
       '@nuxt/devtools-wizard': 1.2.0
       '@nuxt/kit': 3.11.2(rollup@4.17.2)
       '@vue/devtools-applet': 7.1.3(@unocss/reset@0.59.4)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))(vue@3.4.26)
@@ -5836,7 +5836,7 @@ snapshots:
       launch-editor: 2.6.1
       local-pkg: 0.5.0
       magicast: 0.3.4
-      nuxt: 3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
+      nuxt: 3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
       nypm: 0.3.8
       ohash: 1.1.3
       pacote: 18.0.3
@@ -6038,10 +6038,10 @@ snapshots:
       - vti
       - vue-tsc
 
-  '@nuxthub/core@0.5.16(ioredis@5.4.1)(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))':
+  '@nuxthub/core@0.5.16(ioredis@5.4.1)(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))':
     dependencies:
       '@cloudflare/workers-types': 4.20240502.0
-      '@nuxt/devtools-kit': 1.2.0(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
+      '@nuxt/devtools-kit': 1.2.0(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))
       '@nuxt/kit': 3.11.2(rollup@4.17.2)
       '@sindresorhus/slugify': 2.2.1
       '@uploadthing/mime-types': 0.2.9
@@ -7366,9 +7366,9 @@ snapshots:
 
   data-uri-to-buffer@2.0.2: {}
 
-  db0@0.1.4(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0)):
+  db0@0.1.4(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0)):
     optionalDependencies:
-      drizzle-orm: 0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0)
+      drizzle-orm: 0.30.10(@opentelemetry/api@1.8.0)
 
   debug@2.6.9:
     dependencies:
@@ -7471,9 +7471,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0):
+  drizzle-orm@0.30.10(@opentelemetry/api@1.8.0):
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20240502.0
       '@opentelemetry/api': 1.8.0
 
   duplexer@0.1.2: {}
@@ -8366,7 +8365,7 @@ snapshots:
 
   mimic-fn@4.0.0: {}
 
-  miniflare@3.20240419.0:
+  miniflare@3.20240512.0:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       acorn: 8.11.3
@@ -8376,7 +8375,7 @@ snapshots:
       glob-to-regexp: 0.4.1
       stoppable: 1.1.0
       undici: 5.28.4
-      workerd: 1.20240419.0
+      workerd: 1.20240512.0
       ws: 8.17.0
       youch: 3.3.3
       zod: 3.23.7
@@ -8486,7 +8485,7 @@ snapshots:
       mlly: 1.7.0
       pkg-types: 1.1.0
 
-  nitropack@2.9.6(@opentelemetry/api@1.8.0)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13):
+  nitropack@2.9.6(@opentelemetry/api@1.8.0)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
       '@netlify/functions': 2.6.3(@opentelemetry/api@1.8.0)
@@ -8509,7 +8508,7 @@ snapshots:
       cookie-es: 1.1.0
       croner: 8.0.2
       crossws: 0.2.4
-      db0: 0.1.4(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))
+      db0: 0.1.4(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))
       defu: 6.1.4
       destr: 2.0.3
       dot-prop: 8.0.2
@@ -8690,10 +8689,10 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)):
+  nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)):
     dependencies:
       '@nuxt/devalue': 2.0.2
-      '@nuxt/devtools': 1.2.0(@unocss/reset@0.59.4)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))(vue@3.4.26)
+      '@nuxt/devtools': 1.2.0(@unocss/reset@0.59.4)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(nuxt@3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.8)(@unocss/reset@0.59.4)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.26))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(rollup@4.17.2)(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.8)(terser@5.31.0))(vue@3.4.26)
       '@nuxt/kit': 3.11.2(rollup@4.17.2)
       '@nuxt/schema': 3.11.2(rollup@4.17.2)
       '@nuxt/telemetry': 2.5.4(rollup@4.17.2)
@@ -8722,7 +8721,7 @@ snapshots:
       knitwork: 1.1.0
       magic-string: 0.30.10
       mlly: 1.7.0
-      nitropack: 2.9.6(@opentelemetry/api@1.8.0)(drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240502.0)(@opentelemetry/api@1.8.0))(encoding@0.1.13)
+      nitropack: 2.9.6(@opentelemetry/api@1.8.0)(drizzle-orm@0.30.10(@opentelemetry/api@1.8.0))(encoding@0.1.13)
       nuxi: 3.11.1
       nypm: 0.3.8
       ofetch: 1.3.4
@@ -10051,15 +10050,15 @@ snapshots:
 
   wordwrap@1.0.0: {}
 
-  workerd@1.20240419.0:
+  workerd@1.20240512.0:
     optionalDependencies:
-      '@cloudflare/workerd-darwin-64': 1.20240419.0
-      '@cloudflare/workerd-darwin-arm64': 1.20240419.0
-      '@cloudflare/workerd-linux-64': 1.20240419.0
-      '@cloudflare/workerd-linux-arm64': 1.20240419.0
-      '@cloudflare/workerd-windows-64': 1.20240419.0
+      '@cloudflare/workerd-darwin-64': 1.20240512.0
+      '@cloudflare/workerd-darwin-arm64': 1.20240512.0
+      '@cloudflare/workerd-linux-64': 1.20240512.0
+      '@cloudflare/workerd-linux-arm64': 1.20240512.0
+      '@cloudflare/workerd-windows-64': 1.20240512.0
 
-  wrangler@3.53.1(@cloudflare/workers-types@4.20240502.0):
+  wrangler@3.57.0:
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
@@ -10067,7 +10066,7 @@ snapshots:
       blake3-wasm: 2.1.5
       chokidar: 3.6.0
       esbuild: 0.17.19
-      miniflare: 3.20240419.0
+      miniflare: 3.20240512.0
       nanoid: 3.3.7
       path-to-regexp: 6.2.2
       resolve: 1.22.8
@@ -10076,7 +10075,6 @@ snapshots:
       source-map: 0.6.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20240502.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil

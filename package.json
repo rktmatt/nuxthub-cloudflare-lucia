@@ -28,7 +28,7 @@
     "playwright-core": "^1.44.0",
     "uuidv7": "^0.6.3",
     "vitest": "^1.6.0",
-    "wrangler": "^3.53.1",
+    "wrangler": "^3.57.0",
     "zod": "^3.23.7"
   }
 }
