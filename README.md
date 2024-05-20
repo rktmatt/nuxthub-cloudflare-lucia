@@ -1,6 +1,10 @@
-# This project aims to show an example of an implementation of Passkey auth with nuxthub and Olso/Lucia Auth
+## This project aims to show an example of an implementation of Passkey auth with nuxthub and Olso/Lucia Auth
 
 I welcome contributions, tests and error handling
+
+## test link
+
+https://edfda918.nuxthub-cloudflare-lucia.pages.dev/
 
 ### The next step for me is to test it in production on cloudflare workers
 
