@@ -1,7 +1,5 @@
 export default defineNuxtRouteMiddleware(async () => {
-  const { user, session } = await $fetch('/api/me', {
-    method: 'GET',
-  })
-
+  const user = useState('user')
+  const session = useState('session')
   if (!user || !session) return navigateTo('/')
 })

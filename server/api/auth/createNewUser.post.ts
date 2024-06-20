@@ -29,14 +29,14 @@ export default defineEventHandler(async (event) => {
     )
 
     // Save user data and create session
-    const user = await saveUserDataAndCreateSession(
+    await saveUserDataAndCreateSession(
       event,
       encodedPublicKey,
       email,
       publicKeyId,
       alg
     )
-    return user
+    return
   } catch (error) {
     throw error
   }

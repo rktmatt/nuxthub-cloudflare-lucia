@@ -160,12 +160,12 @@ export async function saveUserDataAndCreateSession(
   email: string,
   publicKeyId: string,
   alg: number
-): Promise<User> {
+): Promise<void> {
   try {
     // Generate a unique user ID
     const userId = ('user_' + uuidv7()) as User['id']
 
-    const batch = await useDrizzle().batch([
+    await useDrizzle().batch([
       useDrizzle()
         .insert(tables.user)
         .values({ id: userId, email: email })
@@ -181,7 +181,7 @@ export async function saveUserDataAndCreateSession(
     // Create a session for the user
     await createSession(event, userId)
 
-    return batch[0][0]
+    return
   } catch (error: any) {
     if (
       error.message.includes(

@@ -28,7 +28,7 @@ export default defineEventHandler(async (event) => {
     // Save user data and create session
     await createSession(event, user.id)
 
-    return user
+    return
   } catch (error) {
     throw error
   }

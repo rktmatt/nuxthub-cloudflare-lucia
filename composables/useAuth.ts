@@ -47,7 +47,7 @@ export async function usePassKeyRegistration(
       new Uint8Array(publicKey!)
     )
 
-    const user = await $fetch('/api/auth/createNewUser', {
+    await $fetch('/api/auth/createNewUser', {
       method: 'POST',
       body: {
         challengeId: id,
@@ -59,7 +59,7 @@ export async function usePassKeyRegistration(
         alg: alg,
       },
     })
-    useState('user', () => user)
+    return
   } catch (error) {
     throw error
   }
@@ -94,7 +94,7 @@ export async function usePassKeyLogin(): Promise<void> {
       new Uint8Array(signature)
     )
 
-    const user = await $fetch('/api/auth/login', {
+    await $fetch('/api/auth/login', {
       method: 'POST',
       body: {
         challengeId: id,
@@ -105,15 +105,16 @@ export async function usePassKeyLogin(): Promise<void> {
       },
     })
 
-    useState('user', () => user)
+    return
   } catch (error) {
     throw error
   }
 }
 
-export const useLogout = async () => {
+export async function useLogout() {
   // no need to try catch $fetch errors.
   await $fetch('/api/auth/logout', { method: 'POST' })
   clearNuxtState('user')
-  navigateTo('/')
+  clearNuxtState('session')
+  return navigateTo('/')
 }

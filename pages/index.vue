@@ -3,6 +3,7 @@
 
   const errors = ref()
   const currentUser = useState('user')
+  const session = useState('session')
 
   async function register() {
     try {
@@ -18,6 +19,7 @@
     try {
       errors.value = ''
       await usePassKeyLogin()
+      return navigateTo('/restricted')
     } catch (error: any) {
       errors.value = error.data.statusMessage
     }
@@ -61,5 +63,6 @@
       " />
   </div>
   <pre>user: {{ currentUser }}</pre>
+  <pre>session: {{ session }}</pre>
   <pre>errors: {{ errors }}</pre>
 </template>
