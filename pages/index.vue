@@ -2,12 +2,12 @@
   const email = ref<string>()
   const errors = ref()
 
-  const user = ref<User | null>(null)
-  const session = ref<Session | null>(null)
+  const user = computed(() => {
+    return useState('user').value
+  })
 
-  onMounted(() => {
-    user.value = useState<User>('user').value
-    session.value = useState<Session>('session').value
+  const session = computed(() => {
+    return useState('session').value
   })
 
   async function register() {
@@ -67,7 +67,9 @@
         width: 100%;
       " />
   </div>
-  <pre v-if="user">user: {{ user }}</pre>
-  <pre v-if="session">session: {{ session }}</pre>
+  <ClientOnly>
+    <pre v-if="user">user: {{ user }}</pre>
+    <pre v-if="session">session: {{ session }}</pre>
+  </ClientOnly>
   <pre>errors: {{ errors }}</pre>
 </template>

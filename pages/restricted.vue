@@ -2,17 +2,20 @@
   definePageMeta({
     middleware: 'auth',
   })
-  const user = ref<User | null>(null)
-  const session = ref<Session | null>(null)
 
-  onMounted(() => {
-    user.value = useState<User>('user').value
-    session.value = useState<Session>('session').value
+  const user = computed(() => {
+    return useState('user').value
+  })
+
+  const session = computed(() => {
+    return useState('session').value
   })
 </script>
 
 <template>
   This is a restricted page
-  <pre v-if="user">{{ user }}</pre>
-  <pre v-if="session">{{ session }}</pre>
+  <ClientOnly>
+    <pre v-if="user">{{ user }}</pre>
+    <pre v-if="session">{{ session }}</pre>
+  </ClientOnly>
 </template>

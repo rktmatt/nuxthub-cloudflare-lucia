@@ -5,6 +5,8 @@
   async function logout() {
     try {
       await useLogout()
+      clearNuxtState('user')
+      clearNuxtState('session')
       return navigateTo('/')
     } catch (error: any) {
       errors.value = error.data.statusMessage
