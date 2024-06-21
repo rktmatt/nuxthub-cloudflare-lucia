@@ -6,7 +6,17 @@ export function initializeLucia(D1: D1Database) {
     user: 'user',
     session: 'session',
   })
-  return new Lucia(adapter)
+  return new Lucia(adapter, {
+    getUserAttributes: (databaseUser) => {
+      return {
+        lastName: databaseUser.lastName,
+        firstName: databaseUser.firstName,
+        email: databaseUser.email,
+        role: databaseUser.role,
+        createdAt: databaseUser.createdAt,
+      }
+    },
+  })
 }
 
 declare module 'lucia' {
@@ -21,4 +31,5 @@ interface DatabaseUserAttributes {
   firstName: string
   email: string
   role: string
+  createdAt: string
 }
