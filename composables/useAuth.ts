@@ -112,9 +112,14 @@ export async function usePassKeyLogin(): Promise<void> {
 }
 
 export async function useLogout() {
-  // no need to try catch $fetch errors.
-  await $fetch('/api/auth/logout', { method: 'POST' })
-  clearNuxtState('user')
-  clearNuxtState('session')
-  return navigateTo('/')
+  try {
+    await $fetch('/api/auth/logout', { method: 'POST' })
+    clearNuxtState('user')
+    clearNuxtState('session')
+    return navigateTo('/')
+  } catch (error) {
+    clearNuxtState('user')
+    clearNuxtState('session')
+    return navigateTo('/')
+  }
 }
