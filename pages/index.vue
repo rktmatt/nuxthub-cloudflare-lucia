@@ -1,9 +1,14 @@
 <script setup lang="ts">
   const email = ref<string>()
-
   const errors = ref()
-  const currentUser = useState('user')
-  const session = useState('session')
+
+  const user = ref<User | null>(null)
+  const session = ref<Session | null>(null)
+
+  onMounted(() => {
+    user.value = useState<User>('user').value
+    session.value = useState<Session>('session').value
+  })
 
   async function register() {
     try {
@@ -62,7 +67,7 @@
         width: 100%;
       " />
   </div>
-  <pre>user: {{ currentUser }}</pre>
-  <pre>session: {{ session }}</pre>
+  <pre v-if="user">user: {{ user }}</pre>
+  <pre v-if="session">session: {{ session }}</pre>
   <pre>errors: {{ errors }}</pre>
 </template>

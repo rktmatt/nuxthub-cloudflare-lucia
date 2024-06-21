@@ -11,6 +11,14 @@ export function initializeLucia(D1: D1Database) {
 
 declare module 'lucia' {
   interface Register {
-    Auth: ReturnType<typeof initializeLucia>
+    Lucia: ReturnType<typeof initializeLucia>
+    DatabaseUserAttributes: DatabaseUserAttributes
   }
+}
+
+interface DatabaseUserAttributes {
+  lastName: string
+  firstName: string
+  email: string
+  role: string
 }
