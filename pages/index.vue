@@ -3,12 +3,16 @@
   const errors = ref()
 
   const user = computed(() => {
-    return useState('user').value
+    return data.value?.user
   })
 
   const session = computed(() => {
-    return useState('session').value
+    return data.value?.session
   })
+
+  const { data } = await useAsyncData('user', () =>
+    $fetch('/api/me')
+  )
 
   async function register() {
     try {

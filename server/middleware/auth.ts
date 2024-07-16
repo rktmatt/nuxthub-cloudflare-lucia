@@ -22,6 +22,9 @@ export default defineEventHandler(async (event) => {
   if (!sessionId) {
     event.context.session = null
     event.context.user = null
+    const url = getRequestURL(event)
+    if (url.pathname.startsWith('/restricted'))
+      return sendRedirect(event, '/')
     return
   }
 

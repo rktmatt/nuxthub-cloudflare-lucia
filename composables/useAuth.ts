@@ -67,6 +67,11 @@ export async function usePassKeyRegistration(
 
 export async function usePassKeyLogin(): Promise<void> {
   try {
+    const { user, session } = await $fetch('/api/me')
+    if (user && session) {
+      navigateTo('/restricted')
+      return
+    }
     const { challenge, id } = await $fetch('/api/challenge', {
       method: 'GET',
     })
@@ -114,12 +119,8 @@ export async function usePassKeyLogin(): Promise<void> {
 export async function useLogout() {
   try {
     await $fetch('/api/auth/logout', { method: 'POST' })
-    clearNuxtState('user')
-    clearNuxtState('session')
     return navigateTo('/')
   } catch (error) {
-    clearNuxtState('user')
-    clearNuxtState('session')
     return navigateTo('/')
   }
 }
